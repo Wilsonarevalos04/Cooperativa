@@ -1,0 +1,285 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+						<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		{BEGIN styleCSSFiles}
+<link REL="stylesheet" href="{$stylepath}" type="text/css">
+{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" data-page="ahorros_programados_add"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header}="" data-pageid="{$pageid}" >{$pagetitlelabel ahorros_programados add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" data-page="ahorros_programados_add"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message}="" data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>{mlang_message BACK_TO_LIST}</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>{mlang_message VIEW}</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>{mlang_message EDIT}</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" data-page="ahorros_programados_add" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN socio_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_socio_id}  r-vertical-field" 
+	data-signal-error-for="socio_id{$id}" {$required_attr_socio_id}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field}="" data-pageid="{$pageid}" data-field="socio_id" data-fieldname="socio_id" >
+
+	<label class="r-edit-label control-label {$socio_id_label_class}" for="{$labelfor_socio_id}">
+		{BEGIN socio_id_label}
+			{$socio_id_forward_control}
+			{$label ahorros_programados socio_id }			{END socio_id_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$socio_id_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="socio_id" {$tooltipAttr ahorros_programados socio_id } >
+		<div class="text-muted" >
+		{$tooltip ahorros_programados socio_id }		</div>
+	</div>
+	</div>
+
+
+{END socio_id_fieldblock}
+											
+{BEGIN monto_mensual_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_monto_mensual}  r-vertical-field" 
+	data-signal-error-for="monto_mensual{$id}" {$required_attr_monto_mensual}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1}="" data-pageid="{$pageid}" data-field="monto_mensual" data-fieldname="monto_mensual" >
+
+	<label class="r-edit-label control-label {$monto_mensual_label_class}" for="{$labelfor_monto_mensual}">
+		{BEGIN monto_mensual_label}
+			{$monto_mensual_forward_control}
+			{$label ahorros_programados monto_mensual }			{END monto_mensual_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$monto_mensual_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="monto_mensual" {$tooltipAttr ahorros_programados monto_mensual } >
+		<div class="text-muted" >
+		{$tooltip ahorros_programados monto_mensual }		</div>
+	</div>
+	</div>
+
+
+{END monto_mensual_fieldblock}
+											
+{BEGIN plazo_meses_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_plazo_meses}  r-vertical-field" 
+	data-signal-error-for="plazo_meses{$id}" {$required_attr_plazo_meses}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2}="" data-pageid="{$pageid}" data-field="plazo_meses" data-fieldname="plazo_meses" >
+
+	<label class="r-edit-label control-label {$plazo_meses_label_class}" for="{$labelfor_plazo_meses}">
+		{BEGIN plazo_meses_label}
+			{$plazo_meses_forward_control}
+			{$label ahorros_programados plazo_meses }			{END plazo_meses_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$plazo_meses_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="plazo_meses" {$tooltipAttr ahorros_programados plazo_meses } >
+		<div class="text-muted" >
+		{$tooltip ahorros_programados plazo_meses }		</div>
+	</div>
+	</div>
+
+
+{END plazo_meses_fieldblock}
+											
+{BEGIN fecha_inicio_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_inicio}  r-vertical-field" 
+	data-signal-error-for="fecha_inicio{$id}" {$required_attr_fecha_inicio}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3}="" data-pageid="{$pageid}" data-field="fecha_inicio" data-fieldname="fecha_inicio" >
+
+	<label class="r-edit-label control-label {$fecha_inicio_label_class}" for="{$labelfor_fecha_inicio}">
+		{BEGIN fecha_inicio_label}
+			{$fecha_inicio_forward_control}
+			{$label ahorros_programados fecha_inicio }			{END fecha_inicio_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$fecha_inicio_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="fecha_inicio" {$tooltipAttr ahorros_programados fecha_inicio } >
+		<div class="text-muted" >
+		{$tooltip ahorros_programados fecha_inicio }		</div>
+	</div>
+	</div>
+
+
+{END fecha_inicio_fieldblock}
+											
+{BEGIN estado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_estado}  r-vertical-field" 
+	data-signal-error-for="estado{$id}" {$required_attr_estado}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4}="" data-pageid="{$pageid}" data-field="estado" data-fieldname="estado" >
+
+	<label class="r-edit-label control-label {$estado_label_class}" for="{$labelfor_estado}">
+		{BEGIN estado_label}
+			{$estado_forward_control}
+			{$label ahorros_programados estado }			{END estado_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$estado_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="estado" {$tooltipAttr ahorros_programados estado } >
+		<div class="text-muted" >
+		{$tooltip ahorros_programados estado }		</div>
+	</div>
+	</div>
+
+
+{END estado_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" data-page="ahorros_programados_add"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save}="" data-pageid="{$pageid}" data-small="" data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							{mlang_message SAVE}			</a>
+</span>
+	 
+		{BEGIN reset_button}
+<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset}="" data-pageid="{$pageid}" data-small="" data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							{mlang_message RESET}			</a>
+</span>
+{END reset_button}
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list}="" data-pageid="{$pageid}" data-small="" data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel}="" data-pageid="{$pageid}" data-small="" data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

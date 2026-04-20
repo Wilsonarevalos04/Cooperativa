@@ -1,0 +1,20 @@
+# Archivos de caché y compilados
+templates_c/
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Configuración del entorno y bases de datos locales
+.env
+config.local.php
+
+# Dependencias (si usaras Composer en el futuro)
+vendor/
+node_modules/
+
+# Archivos del sistema y de editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

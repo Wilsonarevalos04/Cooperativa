@@ -1,0 +1,357 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+						<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		{BEGIN styleCSSFiles}
+<link REL="stylesheet" href="{$stylepath}" type="text/css">
+{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" data-page="socios_add"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header}="" data-pageid="{$pageid}" >{$pagetitlelabel socios add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" data-page="socios_add"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message}="" data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN message_back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>{mlang_message BACK_TO_LIST}</button>
+	{END message_back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>{mlang_message VIEW}</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>{mlang_message EDIT}</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" data-page="socios_add" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cedula_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cedula}  r-vertical-field" 
+	data-signal-error-for="cedula{$id}" {$required_attr_cedula}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field}="" data-pageid="{$pageid}" data-field="cedula" data-fieldname="cedula" >
+
+	<label class="r-edit-label control-label {$cedula_label_class}" for="{$labelfor_cedula}">
+		{BEGIN cedula_label}
+			{$cedula_forward_control}
+			{$label socios cedula }			{END cedula_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$cedula_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="cedula" {$tooltipAttr socios cedula } >
+		<div class="text-muted" >
+		{$tooltip socios cedula }		</div>
+	</div>
+	</div>
+
+
+{END cedula_fieldblock}
+											
+{BEGIN nombre_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nombre}  r-vertical-field" 
+	data-signal-error-for="nombre{$id}" {$required_attr_nombre}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1}="" data-pageid="{$pageid}" data-field="nombre" data-fieldname="nombre" >
+
+	<label class="r-edit-label control-label {$nombre_label_class}" for="{$labelfor_nombre}">
+		{BEGIN nombre_label}
+			{$nombre_forward_control}
+			{$label socios nombre }			{END nombre_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$nombre_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="nombre" {$tooltipAttr socios nombre } >
+		<div class="text-muted" >
+		{$tooltip socios nombre }		</div>
+	</div>
+	</div>
+
+
+{END nombre_fieldblock}
+											
+{BEGIN apellido_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_apellido}  r-vertical-field" 
+	data-signal-error-for="apellido{$id}" {$required_attr_apellido}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2}="" data-pageid="{$pageid}" data-field="apellido" data-fieldname="apellido" >
+
+	<label class="r-edit-label control-label {$apellido_label_class}" for="{$labelfor_apellido}">
+		{BEGIN apellido_label}
+			{$apellido_forward_control}
+			{$label socios apellido }			{END apellido_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$apellido_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="apellido" {$tooltipAttr socios apellido } >
+		<div class="text-muted" >
+		{$tooltip socios apellido }		</div>
+	</div>
+	</div>
+
+
+{END apellido_fieldblock}
+											
+{BEGIN direccion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_direccion}  r-vertical-field" 
+	data-signal-error-for="direccion{$id}" {$required_attr_direccion}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3}="" data-pageid="{$pageid}" data-field="direccion" data-fieldname="direccion" >
+
+	<label class="r-edit-label control-label {$direccion_label_class}" for="{$labelfor_direccion}">
+		{BEGIN direccion_label}
+			{$direccion_forward_control}
+			{$label socios direccion }			{END direccion_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$direccion_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="direccion" {$tooltipAttr socios direccion } >
+		<div class="text-muted" >
+		{$tooltip socios direccion }		</div>
+	</div>
+	</div>
+
+
+{END direccion_fieldblock}
+											
+{BEGIN telefono_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_telefono}  r-vertical-field" 
+	data-signal-error-for="telefono{$id}" {$required_attr_telefono}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4}="" data-pageid="{$pageid}" data-field="telefono" data-fieldname="telefono" >
+
+	<label class="r-edit-label control-label {$telefono_label_class}" for="{$labelfor_telefono}">
+		{BEGIN telefono_label}
+			{$telefono_forward_control}
+			{$label socios telefono }			{END telefono_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$telefono_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="telefono" {$tooltipAttr socios telefono } >
+		<div class="text-muted" >
+		{$tooltip socios telefono }		</div>
+	</div>
+	</div>
+
+
+{END telefono_fieldblock}
+											
+{BEGIN email_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_email}  r-vertical-field" 
+	data-signal-error-for="email{$id}" {$required_attr_email}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5}="" data-pageid="{$pageid}" data-field="email" data-fieldname="email" >
+
+	<label class="r-edit-label control-label {$email_label_class}" for="{$labelfor_email}">
+		{BEGIN email_label}
+			{$email_forward_control}
+			{$label socios email }			{END email_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$email_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="email" {$tooltipAttr socios email } >
+		<div class="text-muted" >
+		{$tooltip socios email }		</div>
+	</div>
+	</div>
+
+
+{END email_fieldblock}
+											
+{BEGIN fecha_ingreso_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_ingreso}  r-vertical-field" 
+	data-signal-error-for="fecha_ingreso{$id}" {$required_attr_fecha_ingreso}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6}="" data-pageid="{$pageid}" data-field="fecha_ingreso" data-fieldname="fecha_ingreso" >
+
+	<label class="r-edit-label control-label {$fecha_ingreso_label_class}" for="{$labelfor_fecha_ingreso}">
+		{BEGIN fecha_ingreso_label}
+			{$fecha_ingreso_forward_control}
+			{$label socios fecha_ingreso }			{END fecha_ingreso_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$fecha_ingreso_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="fecha_ingreso" {$tooltipAttr socios fecha_ingreso } >
+		<div class="text-muted" >
+		{$tooltip socios fecha_ingreso }		</div>
+	</div>
+	</div>
+
+
+{END fecha_ingreso_fieldblock}
+											
+{BEGIN estado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_estado}  r-vertical-field" 
+	data-signal-error-for="estado{$id}" {$required_attr_estado}
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7}="" data-pageid="{$pageid}" data-field="estado" data-fieldname="estado" >
+
+	<label class="r-edit-label control-label {$estado_label_class}" for="{$labelfor_estado}">
+		{BEGIN estado_label}
+			{$estado_forward_control}
+			{$label socios estado }			{END estado_label}
+		<span class="icon-required"></span>
+	</label>
+	<div class="r-edit-field">
+		{$estado_editcontrol}	</div>
+		<div class="r-edit-tooltip" data-helpfor="estado" {$tooltipAttr socios estado } >
+		<div class="text-muted" >
+		{$tooltip socios estado }		</div>
+	</div>
+	</div>
+
+
+{END estado_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" data-page="socios_add"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save}="" data-pageid="{$pageid}" data-small="" data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							{mlang_message SAVE}			</a>
+</span>
+	 
+		{BEGIN reset_button}
+<span data-itemtype="add_reset" data-itemid="add_reset" {$item_add_reset}="" data-pageid="{$pageid}" data-small="" data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="resetButton{$id}" >
+							{mlang_message RESET}			</a>
+</span>
+{END reset_button}
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list}="" data-pageid="{$pageid}" data-small="" data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							{mlang_message BACK_TO_LIST}			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel}="" data-pageid="{$pageid}" data-small="" data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							{mlang_message CANCEL}			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
