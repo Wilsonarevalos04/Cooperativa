@@ -213,7 +213,7 @@ $misPrestamos = $stmt->fetchAll();
                     <a href="prestamos.php"><i class="ph ph-bank"></i> Préstamos Vigentes</a>
                 </li>
                 <li>
-                    <a href="#"><i class="ph ph-calendar-check"></i> Ahorros Programados</a>
+                    <a href="ahorros_programados.php"><i class="ph ph-calendar-check"></i> Ahorros Programados</a>
                 </li>
                 
                 <li style="padding: 24px 24px 12px; font-size: 0.8rem; font-weight: 700; color: #cbd5e1; text-transform: uppercase; letter-spacing: 1px;">Operaciones</li>
@@ -224,12 +224,12 @@ $misPrestamos = $stmt->fetchAll();
                     <a href="pagar_cuotas.php"><i class="ph ph-receipt"></i> Pagar Cuotas</a>
                 </li>
                 <li>
-                    <a href="#"><i class="ph ph-file-text"></i> Extractos</a>
+                    <a href="extractos.php"><i class="ph ph-file-text"></i> Extractos</a>
                 </li>
                 
                 <li style="padding: 24px 24px 12px; font-size: 0.8rem; font-weight: 700; color: #cbd5e1; text-transform: uppercase; letter-spacing: 1px;">Configuración</li>
                 <li>
-                    <a href="#"><i class="ph ph-user-circle"></i> Mi Perfil</a>
+                    <a href="perfil.php"><i class="ph ph-user-circle"></i> Mi Perfil</a>
                 </li>
                 <li>
                     <a href="logout.php" style="color: #ef4444;"><i class="ph ph-sign-out"></i> Cerrar Sesión</a>
@@ -251,6 +251,7 @@ $misPrestamos = $stmt->fetchAll();
                 <div class="user-profile">
                     <button style="background: none; border: none; font-size: 1.5rem; color: var(--text-light); cursor: pointer; position: relative;">
                         <i class="ph ph-bell"></i>
+                        <span style="position: absolute; top: 0; right: 0; width: 10px; height: 10px; background: #ef4444; border-radius: 50%; border: 2px solid white;"></span>
                     </button>
                     <div class="avatar"><?php echo substr($_SESSION['socio_nombre'], 0, 1) . substr($_SESSION['socio_apellido'], 0, 1); ?></div>
                     <div style="display: flex; flex-direction: column;">
@@ -392,6 +393,6 @@ $misPrestamos = $stmt->fetchAll();
             }
         });
     </script>
-    <script src="assets/js/notificaciones.js"></script>
+    <script src="assets/js/notificaciones.js?v=1.1"></script>
 </body>
 </html>

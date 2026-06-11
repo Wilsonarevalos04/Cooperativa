@@ -28,8 +28,13 @@ document.addEventListener('DOMContentLoaded', () => {
         userProfile.appendChild(dropdown);
     }
 
-    // El punto rojo es el span dentro del botón
-    const redDot = bellBtn.querySelector('span'); 
+    // El punto rojo es el span dentro del botón (lo creamos si no existe)
+    let redDot = bellBtn.querySelector('span'); 
+    if (!redDot) {
+        redDot = document.createElement('span');
+        redDot.style.cssText = 'position: absolute; top: 0; right: 0; width: 10px; height: 10px; background: #ef4444; border-radius: 50%; border: 2px solid white;';
+        bellBtn.appendChild(redDot);
+    }
     redDot.style.display = 'none'; // oculto por defecto
 
     const notifList = dropdown.querySelector('.notif-list');

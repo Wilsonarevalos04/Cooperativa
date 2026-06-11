@@ -101,7 +101,7 @@ if ($cantPrestamos > 0) {
                     <a href="prestamos.php"><i class="ph ph-bank"></i> Préstamos Vigentes</a>
                 </li>
                 <li>
-                    <a href="#"><i class="ph ph-calendar-check"></i> Ahorros Programados</a>
+                    <a href="ahorros_programados.php"><i class="ph ph-calendar-check"></i> Ahorros Programados</a>
                 </li>
                 
                 <li style="padding: 24px 24px 12px; font-size: 0.8rem; font-weight: 700; color: #cbd5e1; text-transform: uppercase; letter-spacing: 1px;">Operaciones</li>
@@ -112,12 +112,12 @@ if ($cantPrestamos > 0) {
                     <a href="pagar_cuotas.php"><i class="ph ph-receipt"></i> Pagar Cuotas</a>
                 </li>
                 <li>
-                    <a href="#"><i class="ph ph-file-text"></i> Extractos</a>
+                    <a href="extractos.php"><i class="ph ph-file-text"></i> Extractos</a>
                 </li>
                 
                 <li style="padding: 24px 24px 12px; font-size: 0.8rem; font-weight: 700; color: #cbd5e1; text-transform: uppercase; letter-spacing: 1px;">Configuración</li>
                 <li>
-                    <a href="#"><i class="ph ph-user-circle"></i> Mi Perfil</a>
+                    <a href="perfil.php"><i class="ph ph-user-circle"></i> Mi Perfil</a>
                 </li>
                 <li>
                     <a href="logout.php" style="color: #ef4444;"><i class="ph ph-sign-out"></i> Cerrar Sesión</a>
@@ -369,6 +369,6 @@ endif; ?>
             }
         });
     </script>
-    <script src="assets/js/notificaciones.js"></script>
+    <script src="assets/js/notificaciones.js?v=1.1"></script>
 </body>
 </html>

@@ -31,7 +31,7 @@ require_once 'assets/db.php';
                     <a href="logout.php" class="btn btn-outline">Salir</a>
                 <?php else: ?>
                     <a href="login.php" class="btn btn-outline" style="margin-right: 12px;">Acceso Socios</a>
-                    <a href="#" class="btn btn-primary">Asociarse</a>
+                    <a href="solicitud_socio.php" class="btn btn-primary">Asociarse</a>
                 <?php endif; ?>
             </div>
         </div>
@@ -50,6 +50,7 @@ require_once 'assets/db.php';
                         <a href="login.php" class="btn btn-primary">Panel de Socios</a>
                     <?php endif; ?>
                     <a href="menu.php" class="btn btn-outline-white">Administración</a>
+                    <a href="admin_aprobaciones.php" class="btn btn-outline-white" style="background: rgba(255,255,255,0.2);">Aprobaciones</a>
                 </div>
             </div>
             <div class="hero-image glass-panel" style="padding: 30px; display: flex; flex-direction: column; gap: 20px;">

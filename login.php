@@ -12,21 +12,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $documento = $_POST['documento'] ?? '';
     $password = $_POST['password'] ?? '';
 
-    // Según opción 1: la contraseña es la misma cédula
     if ($documento === $password) {
-        $stmt = $pdo->prepare("SELECT * FROM socios WHERE cedula = ? AND estado = 'activo'");
+        $stmt = $pdo->prepare("SELECT * FROM socios WHERE cedula = ?");
         $stmt->execute([$documento]);
         $socio = $stmt->fetch();
 
         if ($socio) {
-            $_SESSION['socio_id'] = $socio['id'];
-            $_SESSION['socio_nombre'] = $socio['nombre'];
-            $_SESSION['socio_apellido'] = $socio['apellido'];
-            $_SESSION['socio_cedula'] = $socio['cedula'];
-            header("Location: portal_socios.php");
-            exit;
+            if ($socio['estado'] === 'pendiente') {
+                $error = "Su solicitud de cuenta está pendiente de aprobación por un administrador.";
+            } elseif ($socio['estado'] === 'inactivo') {
+                $error = "Su cuenta se encuentra inactiva. Contacte a soporte.";
+            } else {
+                $_SESSION['socio_id'] = $socio['id'];
+                $_SESSION['socio_nombre'] = $socio['nombre'];
+                $_SESSION['socio_apellido'] = $socio['apellido'];
+                $_SESSION['socio_cedula'] = $socio['cedula'];
+                header("Location: portal_socios.php");
+                exit;
+            }
         } else {
-            $error = "Credenciales incorrectas o socio inactivo.";
+            $error = "Credenciales incorrectas o socio no encontrado.";
         }
     } else {
         $error = "La contraseña debe ser su mismo documento de identidad.";
@@ -155,7 +160,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             </form>
             
             <div style="text-align: center; margin-top: 32px; font-size: 0.9rem; color: var(--text-light);">
-                ¿Aún no es socio? <a href="#" style="color: var(--primary-color); font-weight: 600;">Asóciese en línea</a>
+                ¿Aún no es socio? <a href="solicitud_socio.php" style="color: var(--primary-color); font-weight: 600;">Asóciese en línea</a>
             </div>
         </div>
     </div>
